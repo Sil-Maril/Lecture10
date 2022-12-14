@@ -15,13 +15,16 @@ body {
   width: calc(100vw - 496px);
   background: #e5e5e5;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
 }
-/* .line-bar {
-  width: 338px;
-  height: 63px;
+.line-bar {
+  margin-top: 58px;
+  display: flex;
+  align-items: center;
   
-} */
+}
 .ball, .ball1 {
 border-radius: 50%;
 width: 20px;
@@ -36,13 +39,20 @@ height: 20px;
 .line {
 width: 159px;
 border: 1px solid #C0C0C0;
-background-color: #C0C0C0;
+background-color: #C0C0C0; 
 transform: rotate(-0.36deg);
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 12px;
 }
 .header h5, 
 .header h6{
 font-size: 16px;
 font-weight: 400;
+
 }
 
 h5 {
